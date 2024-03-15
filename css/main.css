@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "Apoc Normal";
+  src: url("../assets/fonts/ApocNormal-RegularItalic.woff2") format("woff2"), url("../assets/fonts/ApocNormal-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Root UI VF";
+  src: url("../assets/fonts/PTRootUIVF.woff2") format("woff2"), url("../assets/fonts/PTRootUIVF.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: url("../assets/fonts/PTRootUI-Regular.woff2") format("woff2"), url("../assets/fonts/PTRootUI-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: url("../assets/fonts/PTRootUI-Bold.woff2") format("woff2"), url("../assets/fonts/PTRootUI-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: url("../assets/fonts/PTRootUI-Light.woff2") format("woff2"), url("../assets/fonts/PTRootUI-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: url("../assets/fonts/PTRootUI-Medium.woff2") format("woff2"), url("../assets/fonts/PTRootUI-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Root UI", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero .container {
+  max-width: 1920px;
+  padding: 0;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hero__title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+  margin-block: 80px;
+  position: relative;
+  z-index: 10;
+}
+@media screen and (min-width: 0px) and (max-width: 1600px) {
+  .hero__title {
+    margin-block: 50px;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__title {
+    margin-block: 10px;
+    gap: 10px;
+    padding-inline: 10px;
+  }
+}
+
+.hero__title h2 {
+  color: #F2632A;
+  font-size: 96px;
+  font-weight: 700;
+}
+.hero__title h2 span {
+  font-family: "Apoc Normal";
+  font-weight: 400;
+  font-style: italic;
+}
+@media screen and (min-width: 0px) and (max-width: 1600px) {
+  .hero__title h2 {
+    font-size: 70px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 1440px) {
+  .hero__title h2 {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero__title h2 {
+    font-size: 58px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__title h2 {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .hero__title h2 {
+    font-size: 32px;
+  }
+}
+
+.hero__title p {
+  max-width: 919px;
+  color: #2D2E46;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .hero__title p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .hero__title p {
+    font-size: 14px;
+  }
+}
+
+.hero__exhibition {
+  display: flex;
+}
+
+.exhibition__left-content {
+  min-width: 580px;
+}
+@media screen and (min-width: 0px) and (max-width: 1190px) {
+  .exhibition__left-content {
+    display: none;
+  }
+}
+
+.exhibition__left-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.exhibition__right-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibition__right-content img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media screen and (max-width: 767px) {
+  .exhibition__right-content img {
+    height: 360px;
+  }
+}
+
+.exhibition__content-info {
+  padding: 136px 0 160px 120px;
+}
+@media screen and (min-width: 0px) and (max-width: 1600px) {
+  .exhibition__content-info {
+    padding: 100px 20px 120px 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .exhibition__content-info {
+    padding: 80px 20px 100px 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .exhibition__content-info {
+    padding: 40px 20px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  .exhibition__content-info {
+    padding: 40px 10px;
+  }
+}
+
+.title {
+  color: #F2632A;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.title span {
+  font-family: "Apoc Normal";
+  font-style: italic;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+}
+
+.content__paragraph {
+  max-width: 761px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.content__paragraph p {
+  color: #2D2E46;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .content__paragraph p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 475px) {
+  .content__paragraph p {
+    text-align: justify;
+    font-size: 10px;
+  }
+}
+
+.hero__image-wrapper {
+  width: 100%;
+  height: 600px;
+  background-image: url("../assets/images/hero__image-paralax.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero__image-wrapper .container {
+  position: relative;
+  height: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero__image-wrapper {
+    height: 700px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__image-wrapper {
+    height: 500px;
+  }
+}/*# sourceMappingURL=main.css.map */

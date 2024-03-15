@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Root UI', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @include mobile() {
+        padding: 10px;
+    }
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
